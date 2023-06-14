@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 body{
     max-width: 375px; 
@@ -120,7 +121,7 @@ body{
     margin-top:20px;
   }
   .circle1 p{
-    color: grey;
+    color: rgb(182, 174, 174);
     text-align: center;
     margin-top: -25px;
     padding: 10px;
@@ -133,9 +134,22 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 550;
   }
-  .section h5{
-    font-size: 16px;
-  }
+ .sc{
+  color: black;
+  font-weight: 800;
+ }
+em{
+  text-decoration: none;
+  text-decoration-style: none;
+  color: gray;
+}
+img{
+  padding: 0.4rem;
+
+}
+section p{
+  margin-top: 5px;
+}
   .reaction{
     display: inline-flex;
     width: 100%;
@@ -153,6 +167,7 @@ body{
   .reaction span{
     padding-right: 10px;
   }
+  
   .memory{
     display: inline-flex;
     width: 100%;
@@ -218,8 +233,13 @@ body{
     margin-top: 10px;
     
   }
+  .button1:hover{
+    background-color: blue;
+    border: outset 2px blue;
+    transition:500ms ease-in rgb(43, 43, 134);
+  }
   
-  @media (min-width:380px) {
+  @media (min-width:768px) {
     .wrapper{
       display: inline-flex;
       max-height: 100%;
@@ -249,9 +269,28 @@ body{
       border: 1px solid rgb(144, 197, 144);
       box-shadow:  rgb(160, 201, 160) 3px 3px 9px;
     }
+    img{
+      padding: 1rem;
+      margin-top:-1rem ;
+    
+    }
+    section p{
+      margin-top: 5px;
+    }
     .attribution{
       position:relative;
       top: 320px;
     }
   
+  }
+
+  @media (min-width:1000px){
+    img{
+      padding: 1.5rem;
+      margin-top:-1.5rem ;
+    
+    }
+    section p{
+      margin-top: 0px;
+    }
   }

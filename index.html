@@ -34,11 +34,41 @@
       </div>
       <div class="row section" style="display: inline-flex;">
         <h3>Summary</h3>
-        <section>
-          <div class="reaction" ><span><img src="assets/images/icon-reaction.svg" alt=""></span><p>Reaction</p> <h5 id="fre">87</h5>/ 100</div>
-          <div class="memory" ><span><img src="assets/images/icon-memory.svg" alt=""></span><p>Memory</p> <h5></h5></div>
-          <div class="verbal" > <span><img src="assets/images/icon-verbal.svg" alt=""></span><p>Verbal</p> <h5></h5></div>
-          <div class="visual" > <span><img src="assets/images/icon-visual.svg" alt=""></span><p>Visual</p></div>  
+        <section class=>
+          <div class="reaction">
+            <span class="col-2 p-2.5"><img src="assets/images/icon-reaction.svg" alt=""></span>
+            <p id="category1" class="col-2"></p>
+            <div class="col-12 sc">
+              <span id="score"></span>
+              <em>/ 100</em>
+            </div>
+          </div>
+          <div class="memory" >
+            <span class="col-2"><img src="assets/images/icon-memory.svg" alt=""></span>
+            <p id="category2" class="col-2"></p> 
+            <div class="col-12 sc">
+              <span id="score2"></span>
+              <em>/ 100</em>
+            </div>
+          </div>
+          <div class="verbal" > 
+            <span class="col-2"><img src="assets/images/icon-verbal.svg" alt=""></span>
+            <p id="category3" class="col-2"></p> 
+            <div class="col-12 sc">
+              <span id="score3">
+              </span>
+              <em>/ 100</em>
+            </div>
+          </div>
+          <div class="visual" > 
+            <span class="col-2"><img src="assets/images/icon-visual.svg" alt=""></span>
+            <p id="category4" class="col-2"></p>
+            <div class="col-12 sc">
+              <span id="score4" >
+              </span>
+              <em>/ 100</em> 
+          </div>
+          </div>  
         </section>
         <div class="button">
           <button class="button1">Continue</button>
@@ -53,16 +83,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Adesina Ridwan</a>.
   </div>
-  <script>
-    var obj =[];
-    fetch("data.json")
-  .then(response => response.json())
-  // use (display) the JSON data
-  .then(data => obj.push(data));
-  console.log(obj);
-  let reactionScore = document.getElementById('fre');
-  console.log(reactionScore);
-  reactionScore.innerHTML =`${obj[0][0].score}`;
-  </script>
+ <script src="/assets/js/script.js"></script>
 </body>
 </html>
